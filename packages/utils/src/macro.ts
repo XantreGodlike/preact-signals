@@ -6,7 +6,7 @@ console.log(
 /**
  * This function is compile time shorthand for `$(() => value)`
  *
- * @example 
+ * @example
  * ```tsx
  * import { $$ } from "@preact-signals/utils/macro";
  *
@@ -35,5 +35,12 @@ console.log(
  * ```
  */
 export const $$: <T>(value: T) => ReactiveRef<T> = () => {
+  throw new Error("This function is only available at compile time");
+};
+
+export const $state = <T>(value: T): T => {
+  throw new Error("This function is only available at compile time");
+};
+export const $linkedState = <T>(value: T): T => {
   throw new Error("This function is only available at compile time");
 };

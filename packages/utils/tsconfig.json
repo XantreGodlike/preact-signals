@@ -18,7 +18,10 @@
     "vitest.config.ts",
     "setupVitest.ts",
     "**/*.test.*",
-    "**/*.spec.*"
+    "**/*.spec.*",
+    "**/CHANGELOG.*",
+    "**/README.*",
+    "./docs/**/*"
   ],
   "extends": "../../tsconfig.json",
   "references": [{ "path": "../unified-signals" }]

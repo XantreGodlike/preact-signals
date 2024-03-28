@@ -1,0 +1,6 @@
+{
+  "main": "../dist/cjs/macro.cjs",
+  "types": "../dist/types/macro.d.ts",
+  "react-native": "../src/macro.ts",
+  "source": "../src/macro.ts"
+}

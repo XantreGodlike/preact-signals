@@ -92,6 +92,13 @@
       "require": "./dist/cjs/lib/integrations/reanimated.cjs",
       "source": "./src/lib/integrations/reanimated.ts"
     },
+    "./macro-helper": {
+      "types": "./dist/types/lib/macro-helper.d.ts",
+      "import": "./dist/esm/lib/macro-helper.mjs",
+      "react-native": "./src/lib/macro-helper.ts",
+      "require": "./dist/cjs/lib/macro-helper.cjs",
+      "source": "./src/lib/macro-helper.ts"
+    },
     "./package.json": "./package.json"
   },
   "scripts": {
@@ -121,6 +128,9 @@
       ],
       "store/hooks": [
         "./dist/types/lib/hooks/store.d.ts"
+      ],
+      "macro": [
+        "./dist/types/macro.d.ts"
       ]
     }
   },
@@ -157,6 +167,7 @@
     "@babel/helper-module-imports": "7.22.15",
     "@babel/traverse": "^7.23.4",
     "@preact-signals/unified-signals": "workspace:*",
+    "assert": "^2.1.0",
     "react-fast-hoc": "0.3.2",
     "type-fest": "^3.13.1"
   },
@@ -165,6 +176,7 @@
     "@preact/signals-react": "^1.3.6",
     "@rollup/plugin-replace": "^5.0.5",
     "@rollup/plugin-typescript": "^11.1.5",
+    "@types/assert": "^1.5.10",
     "@types/babel__core": "^7.20.4",
     "@types/babel__helper-module-imports": "^7.18.3",
     "@types/babel__traverse": "^7.20.4",
