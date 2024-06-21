@@ -187,7 +187,7 @@
     "radash": "^12.1.0",
     "react": "^18",
     "react-dom": "^18",
-    "react-native-reanimated": "^3.7.0",
+    "react-native-reanimated": "^3.12.1",
     "rollup": "^4.17.1",
     "rollup-plugin-esbuild": "^5.0.0",
     "rollup-plugin-node-externals": "^6.1.2",
