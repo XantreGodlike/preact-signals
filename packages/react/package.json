@@ -144,7 +144,7 @@
     "@types/react-dom": "^18.2.15",
     "@types/regex-escape": "^3.4.1",
     "@types/use-sync-external-store": "^0.0.3",
-    "@vitejs/plugin-react": "^4.1.1",
+    "@vitejs/plugin-react": "^4.3.1",
     "check-export-map": "^1.3.1",
     "concurrently": "^8.2.2",
     "esbuild": "0.21.2",
