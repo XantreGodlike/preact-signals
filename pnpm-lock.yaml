@@ -233,8 +233,8 @@ importers:
         version: 1.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
     devDependencies:
       '@shikijs/monaco':
-        specifier: ^1.2.3
-        version: 1.2.3
+        specifier: ^1.10.0
+        version: 1.10.0
       '@types/babel__standalone':
         specifier: ^7.1.7
         version: 7.1.7
@@ -1329,12 +1329,6 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
-  '@babel/plugin-transform-typescript@7.21.3':
-    resolution: {integrity: sha512-RQxPz6Iqt8T0uw/WsJNReuBpWpBqs/n7mNo18sKLoTbMp+UrEekhH+pKSVC7gWz+DNjo9gryfV8YzCiT45RgMw==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-
   '@babel/plugin-transform-typescript@7.23.6':
     resolution: {integrity: sha512-6cBG5mBvUu4VUD04OHKnYzbuHNP8huDsD3EDqqpIpsswTDoqHCjLoHb6+QgsV1WsT2nipRqCPgxD3LXnEO7XfA==}
     engines: {node: '>=6.9.0'}
@@ -1777,6 +1771,7 @@ packages:
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
     engines: {node: '>=10.10.0'}
+    deprecated: Use @eslint/config-array instead
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -1784,6 +1779,7 @@ packages:
 
   '@humanwhocodes/object-schema@2.0.2':
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
+    deprecated: Use @eslint/object-schema instead
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -2089,7 +2085,7 @@ packages:
     resolution: {integrity: sha512-WlFttNnySKQMeujN09fRmrdWqh46QyJluM5jdtDNrkl/2Hx6N4XeDUGhABvConeK95OidVO7sFFf7sNebVXogA==}
     engines: {node: '>=18'}
     peerDependencies:
-      '@babel/core': 7.21.5
+      '@babel/core': '*'
 
   '@react-native/codegen@0.73.3':
     resolution: {integrity: sha512-sxslCAAb8kM06vGy9Jyh4TtvjhcP36k/rvj2QE2Jdhdm61KvfafCATSIsOfc0QvnduWFcpXUPvAVyYwuv7PYDg==}
@@ -2251,11 +2247,14 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@shikijs/core@1.10.0':
+    resolution: {integrity: sha512-BZcr6FCmPfP6TXaekvujZcnkFmJHZ/Yglu97r/9VjzVndQA56/F4WjUKtJRQUnK59Wi7p/UTAOekMfCJv7jnYg==}
+
   '@shikijs/core@1.2.3':
     resolution: {integrity: sha512-SM+aiQVaEK2P53dEcsvhq9+LJPr0rzwezHbMQhHaSrPN4OlOB4vp1qTdhVEKfMg6atdq8s9ZotWW/CSCzWftwg==}
 
-  '@shikijs/monaco@1.2.3':
-    resolution: {integrity: sha512-a9LY7g4Gx8ZssOhn476MHCx0QMUMg+EHjBYHjv0rqCgU9MLlBYr8+xqgd3JTjiDWDQdKrxVgy4X9o8YdFQTM2g==}
+  '@shikijs/monaco@1.10.0':
+    resolution: {integrity: sha512-fEnfzRDNr12fHqCxv6sjYyK8hKQPf3w1j9XHXZihuEvEXIIPM2ZdBjZg1+xN0LW1Bcmu1im84C/tgekQW1bFeQ==}
 
   '@sideway/address@4.1.5':
     resolution: {integrity: sha512-IqO/DUQHUkPeixNQ8n0JA6102hT9CmaljNTPmQ1u8MEhBo/R4Q8eKLN/vGZxuebwOroDB4cbpjheD4+/sKFK4Q==}
@@ -7128,14 +7127,6 @@ snapshots:
       '@babel/core': 7.24.6
       '@babel/helper-plugin-utils': 7.24.6
 
-  '@babel/plugin-transform-typescript@7.21.3(@babel/core@7.24.6)':
-    dependencies:
-      '@babel/core': 7.24.6
-      '@babel/helper-annotate-as-pure': 7.24.6
-      '@babel/helper-create-class-features-plugin': 7.24.6(@babel/core@7.24.6)
-      '@babel/helper-plugin-utils': 7.24.6
-      '@babel/plugin-syntax-typescript': 7.23.3(@babel/core@7.24.6)
-
   '@babel/plugin-transform-typescript@7.23.6(@babel/core@7.24.6)':
     dependencies:
       '@babel/core': 7.24.6
@@ -8123,7 +8114,7 @@ snapshots:
       '@babel/plugin-transform-shorthand-properties': 7.24.6(@babel/core@7.24.6)
       '@babel/plugin-transform-spread': 7.24.6(@babel/core@7.24.6)
       '@babel/plugin-transform-sticky-regex': 7.24.6(@babel/core@7.24.6)
-      '@babel/plugin-transform-typescript': 7.21.3(@babel/core@7.24.6)
+      '@babel/plugin-transform-typescript': 7.23.6(@babel/core@7.24.6)
       '@babel/plugin-transform-unicode-regex': 7.24.6(@babel/core@7.24.6)
       '@babel/template': 7.24.6
       '@react-native/babel-plugin-codegen': 0.73.4(@babel/preset-env@7.24.6(@babel/core@7.24.6))
@@ -8286,11 +8277,13 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.17.1':
     optional: true
 
+  '@shikijs/core@1.10.0': {}
+
   '@shikijs/core@1.2.3': {}
 
-  '@shikijs/monaco@1.2.3':
+  '@shikijs/monaco@1.10.0':
     dependencies:
-      '@shikijs/core': 1.2.3
+      '@shikijs/core': 1.10.0
 
   '@sideway/address@4.1.5':
     dependencies:
